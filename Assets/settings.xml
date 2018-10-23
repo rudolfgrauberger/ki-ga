@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CarInstances="200" GenerationSize="200" SequenceLength="5" GeneDuration="10">
+  <FileLocation>settings.xml</FileLocation>
+  <Genes>
+    <Gene>GeneA</Gene>
+    <Gene>GeneB</Gene>
+    <Gene>GeneC</Gene>
+    <Gene>GeneD</Gene>
+    <Gene>GeneE</Gene>
+  </Genes>
+  <SelectedGenes>
+    <Setting>GeneA</Setting>
+    <Setting>GeneB</Setting>
+    <Setting>GeneC</Setting>
+    <Setting>GeneD</Setting>
+    <Setting>GeneE</Setting>
+  </SelectedGenes>
+  <Initializers>
+    <Initializer>AInit</Initializer>
+    <Initializer>RandomInitializer</Initializer>
+  </Initializers>
+  <SelectedInitializer>RandomInitializer</SelectedInitializer>
+  <FitnessFunctions>
+    <FitnessFunctions>DummyFitness</FitnessFunctions>
+  </FitnessFunctions>
+  <SelectedFitnessFunction>DummyFitness</SelectedFitnessFunction>
+  <Selectors>
+    <Selector>DummySelector</Selector>
+  </Selectors>
+  <SelectedSelector>DummySelector</SelectedSelector>
+  <Recombiners>
+    <Recombiner>DummyRecombiner</Recombiner>
+  </Recombiners>
+  <SelectedRecombiner>DummyRecombiner</SelectedRecombiner>
+  <Mutators>
+    <Mutator>DummyMutator</Mutator>
+  </Mutators>
+  <SelectedMutator>DummyMutator</SelectedMutator>
+  <Terminators>
+    <Terminator>DummyTerminator</Terminator>
+    <Terminator>TestTerm</Terminator>
+  </Terminators>
+  <SelectedTerminator>DummyTerminator</SelectedTerminator>
+</Settings>
