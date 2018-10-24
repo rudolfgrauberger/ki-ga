@@ -2,19 +2,19 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class RoundRobinInitializer : IInitializer
+public class StartAndEndOptimizedInitializer : IInitializer
 {
     private List<char> genes;
     private Random rand;
 
     public void AssignGene(char ID)
     {
-          if (genes == null)
-          {
-                genes = new List<char>();
-          }
+        if (genes == null)
+        {
+            genes = new List<char>();
+        }
 
-          genes.Add(ID);
+        genes.Add(ID);
     }
 
     public List<Individual> CreateInitialGeneration(int generationSize, int individualSize)
@@ -31,7 +31,7 @@ public class RoundRobinInitializer : IInitializer
     {
         if (rand == null)
         {
-         rand = new Random();
+            rand = new Random();
         }
 
         int max = genes.Count;
@@ -40,9 +40,13 @@ public class RoundRobinInitializer : IInitializer
         System.Text.StringBuilder builder = new System.Text.StringBuilder(individualSize);
         for (int i = 0; i < individualSize; i++)
         {
-         builder.Append(genes[pos++ % max]);
+            builder.Append(genes[pos++ % max]);
         }
+
+        builder[0] = 'B';
+        builder[builder.Length -1] = 'E';
+        
         ind.GeneSequence = builder.ToString();
         return ind;
-    }
+   }
 }
