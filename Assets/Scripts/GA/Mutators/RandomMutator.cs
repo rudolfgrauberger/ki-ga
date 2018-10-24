@@ -1,9 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-class StartAndEndOptimizedMutator: IMutator
+public class RandomMutator : IMutator
 {
     private List<char> genes;
     private Random rand;
@@ -22,9 +20,9 @@ class StartAndEndOptimizedMutator: IMutator
         if (rand == null)
             rand = new Random();
 
-        char newGen = genes[rand.Next(0, genes.Count)];
-        //Lässt die erste und letzte stelle aus. Eigent sich für StartAndEndOptimzed
-        int position = rand.Next(1, original.Length - 2);
+        char newGen= genes[rand.Next(0, genes.Count)];
+        //W�hlt aus dem gesamten string eine Stelle aus
+        int position = rand.Next(0, original.Length - 1);
 
         System.Text.StringBuilder builder = new System.Text.StringBuilder(original);
         builder[position] = newGen;

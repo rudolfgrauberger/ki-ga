@@ -20,7 +20,6 @@ public class TeamD_GelbFitness : IFitnessFunction
         var goalTransform = GameObject.Find("GoalPosition").transform;
         var spawnPoint = GameObject.Find("SpawnPoint").transform;
 
-
         var relAngle = angle * WEIGHT_ANGLE;
         var relVelocity = velocity * WEIGHT_VELOCITY;
         var relDistance = distance * WEIGHT_DISTANCE;
@@ -29,7 +28,6 @@ public class TeamD_GelbFitness : IFitnessFunction
         var relVelocity = (1 - velocity) * WEIGHT_VELOCITY;
         var relDistance = 1 - ( distance / (spawnPoint.position - goalTransform.position).sqrMagnitude) * WEIGHT_DISTANCE;
         var relCollisions = collisions == 0 ? 1 * WEIGHT_COLLISION : 0 * WEIGHT_COLLISION;*/
-
 
         var fitness = relAngle + relVelocity + relDistance + relCollisions;
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="Windows-1252"?>
-<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CarInstances="200" GenerationSize="200" SequenceLength="10" GeneDuration="10">
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CarInstances="250" GenerationSize="250" SequenceLength="15" GeneDuration="15">
   <FileLocation>settings.xml</FileLocation>
   <Genes>
     <Gene>GeneA</Gene>
@@ -24,29 +24,33 @@
   <SelectedInitializer>RandomInitializer</SelectedInitializer>
   <FitnessFunctions>
     <FitnessFunctions>DummyFitness</FitnessFunctions>
+    <FitnessFunctions>MyFitness999</FitnessFunctions>
     <FitnessFunctions>TeamD_GelbFitness</FitnessFunctions>
   </FitnessFunctions>
-  <SelectedFitnessFunction>TeamD_GelbFitness</SelectedFitnessFunction>
+  <SelectedFitnessFunction>MyFitness999</SelectedFitnessFunction>
   <Selectors>
     <Selector>DummySelector</Selector>
+    <Selector>MySelector999</Selector>
     <Selector>RandomSelector</Selector>
     <Selector>ThresholdSelector</Selector>
     <Selector>TournamentSelector</Selector>
   </Selectors>
-  <SelectedSelector>TournamentSelector</SelectedSelector>
+  <SelectedSelector>MySelector999</SelectedSelector>
   <Recombiners>
     <Recombiner>DummyRecombiner</Recombiner>
+    <Recombiner>NPointCrossOver</Recombiner>
   </Recombiners>
-  <SelectedRecombiner>DummyRecombiner</SelectedRecombiner>
+  <SelectedRecombiner>NPointCrossOver</SelectedRecombiner>
   <Mutators>
     <Mutator>DummyMutator</Mutator>
-    <Mutator>StartAndEndOptimizedMutator</Mutator>
+    <Mutator>TimoTator</Mutator>
   </Mutators>
-  <SelectedMutator>DummyMutator</SelectedMutator>
+  <SelectedMutator>TimoTator</SelectedMutator>
   <Terminators>
     <Terminator>DummyTerminator</Terminator>
+    <Terminator>MyTerminator999</Terminator>
     <Terminator>NinetyFivePercentTerminator</Terminator>
     <Terminator>TestTerm</Terminator>
   </Terminators>
-  <SelectedTerminator>NinetyFivePercentTerminator</SelectedTerminator>
+  <SelectedTerminator>MyTerminator999</SelectedTerminator>
 </Settings>
