@@ -7,12 +7,28 @@ class UniformRecombiner : IRecombiner
 {
     public string Combine(string parentA, string parentB)
     {
-        System.Text.StringBuilder builder = new System.Text.StringBuilder(parentA);
+
+        string invA;
+        string invB;
+
+        Random rand = new Random();
+        if(rand.Next(0,2)<1)
+        {
+            invA = parentA;
+            invB = parentB;
+        }
+        else
+        {
+            invA = parentB;
+            invB = parentA;
+        }
+
+        System.Text.StringBuilder builder = new System.Text.StringBuilder(invA);
 
         //Jedes zweite Gen aus A wird durch das Gen aus B an derselben Stelle ersetzt
-        for (int i = 1; i < parentA.Length; i += 2)
+        for (int i = 1; i < invA.Length; i += 2)
         {
-            builder[i] = parentB[i];
+            builder[i] = invB[i];
         }
 
         return builder.ToString();

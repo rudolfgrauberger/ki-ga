@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="Windows-1252"?>
-<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CarInstances="250" GenerationSize="250" SequenceLength="15" GeneDuration="15">
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CarInstances="200" GenerationSize="200" SequenceLength="15" GeneDuration="15">
   <FileLocation>settings.xml</FileLocation>
   <Genes>
     <Gene>GeneA</Gene>
@@ -39,13 +39,16 @@
   <Recombiners>
     <Recombiner>DummyRecombiner</Recombiner>
     <Recombiner>NPointCrossOver</Recombiner>
+    <Recombiner>UniformRecombiner</Recombiner>
   </Recombiners>
-  <SelectedRecombiner>NPointCrossOver</SelectedRecombiner>
+  <SelectedRecombiner>UniformRecombiner</SelectedRecombiner>
   <Mutators>
     <Mutator>DummyMutator</Mutator>
+    <Mutator>RandomMutator</Mutator>
+    <Mutator>StartAndEndOptimizedMutator</Mutator>
     <Mutator>TimoTator</Mutator>
   </Mutators>
-  <SelectedMutator>TimoTator</SelectedMutator>
+  <SelectedMutator>RandomMutator</SelectedMutator>
   <Terminators>
     <Terminator>DummyTerminator</Terminator>
     <Terminator>MyTerminator999</Terminator>
