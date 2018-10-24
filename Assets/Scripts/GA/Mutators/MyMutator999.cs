@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Mutatotron = UnityEngine.Random;
 
-public class TimoTator : IMutator
+public class MyMutator999 : IMutator
 {
     static string[] abilities =
     {
