@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="Windows-1252"?>
-<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CarInstances="200" GenerationSize="200" SequenceLength="15" GeneDuration="15">
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CarInstances="200" GenerationSize="200" SequenceLength="10" GeneDuration="10">
   <FileLocation>settings.xml</FileLocation>
   <Genes>
     <Gene>GeneA</Gene>
@@ -21,7 +21,7 @@
     <Initializer>RoundRobinInitializer</Initializer>
     <Initializer>StartAndEndOptimizedInitializer</Initializer>
   </Initializers>
-  <SelectedInitializer>StartAndEndOptimizedInitializer</SelectedInitializer>
+  <SelectedInitializer>RandomInitializer</SelectedInitializer>
   <FitnessFunctions>
     <FitnessFunctions>DummyFitness</FitnessFunctions>
     <FitnessFunctions>TeamD_GelbFitness</FitnessFunctions>
@@ -33,13 +33,14 @@
     <Selector>ThresholdSelector</Selector>
     <Selector>TournamentSelector</Selector>
   </Selectors>
-  <SelectedSelector>ThresholdSelector</SelectedSelector>
+  <SelectedSelector>TournamentSelector</SelectedSelector>
   <Recombiners>
     <Recombiner>DummyRecombiner</Recombiner>
   </Recombiners>
   <SelectedRecombiner>DummyRecombiner</SelectedRecombiner>
   <Mutators>
     <Mutator>DummyMutator</Mutator>
+    <Mutator>StartAndEndOptimizedMutator</Mutator>
   </Mutators>
   <SelectedMutator>DummyMutator</SelectedMutator>
   <Terminators>
