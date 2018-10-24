@@ -19,8 +19,9 @@
     <Initializer>AInit</Initializer>
     <Initializer>RandomInitializer</Initializer>
     <Initializer>RoundRobinInitializer</Initializer>
+    <Initializer>StartAndEndOptimizedInitializer</Initializer>
   </Initializers>
-  <SelectedInitializer>RandomInitializer</SelectedInitializer>
+  <SelectedInitializer>StartAndEndOptimizedInitializer</SelectedInitializer>
   <FitnessFunctions>
     <FitnessFunctions>DummyFitness</FitnessFunctions>
     <FitnessFunctions>TeamD_GelbFitness</FitnessFunctions>
@@ -32,7 +33,7 @@
     <Selector>ThresholdSelector</Selector>
     <Selector>TournamentSelector</Selector>
   </Selectors>
-  <SelectedSelector>TournamentSelector</SelectedSelector>
+  <SelectedSelector>ThresholdSelector</SelectedSelector>
   <Recombiners>
     <Recombiner>DummyRecombiner</Recombiner>
   </Recombiners>
