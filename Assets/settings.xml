@@ -23,12 +23,15 @@
   <SelectedInitializer>RandomInitializer</SelectedInitializer>
   <FitnessFunctions>
     <FitnessFunctions>DummyFitness</FitnessFunctions>
+    <FitnessFunctions>TeamD_GelbFitness</FitnessFunctions>
   </FitnessFunctions>
-  <SelectedFitnessFunction>DummyFitness</SelectedFitnessFunction>
+  <SelectedFitnessFunction>TeamD_GelbFitness</SelectedFitnessFunction>
   <Selectors>
     <Selector>DummySelector</Selector>
+    <Selector>ThresholdSelector</Selector>
+    <Selector>TournamentSelector</Selector>
   </Selectors>
-  <SelectedSelector>DummySelector</SelectedSelector>
+  <SelectedSelector>TournamentSelector</SelectedSelector>
   <Recombiners>
     <Recombiner>DummyRecombiner</Recombiner>
   </Recombiners>
@@ -39,7 +42,8 @@
   <SelectedMutator>DummyMutator</SelectedMutator>
   <Terminators>
     <Terminator>DummyTerminator</Terminator>
+    <Terminator>NinetyFivePercentTerminator</Terminator>
     <Terminator>TestTerm</Terminator>
   </Terminators>
-  <SelectedTerminator>DummyTerminator</SelectedTerminator>
+  <SelectedTerminator>NinetyFivePercentTerminator</SelectedTerminator>
 </Settings>
