@@ -7,7 +7,6 @@ using System.Collections.Generic;
 /// Author: Sascha Schewe
 /// </summary>
 public interface IInitializer {
-
     /// <summary>
     /// Assigns the gene IDs that are to be used to build gene sequences their IDs should make up Individuals' gene sequences.
     /// </summary>
