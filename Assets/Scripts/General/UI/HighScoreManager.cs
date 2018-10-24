@@ -35,7 +35,7 @@ public class HighScoreManager : MonoBehaviour {
         if (topIndividuals == null)
             return;
         Debug.Log("Setting High Scores");
-        int length = Mathf.Min(10, topIndividuals[0].GeneSequence.Length);
+        int length = Mathf.Max(10, topIndividuals[0].GeneSequence.Length);
         for(int i = 0; i < 10 && i<topIndividuals.Count; i++)
         {
             instance.highScores[i].text = i + 1 + ": " + topIndividuals[i].geneSequence.Substring(0, length) + " - " + topIndividuals[i].fitnessValue;
