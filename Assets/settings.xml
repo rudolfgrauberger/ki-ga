@@ -28,6 +28,7 @@
   <SelectedFitnessFunction>TeamD_GelbFitness</SelectedFitnessFunction>
   <Selectors>
     <Selector>DummySelector</Selector>
+    <Selector>RandomSelector</Selector>
     <Selector>ThresholdSelector</Selector>
     <Selector>TournamentSelector</Selector>
   </Selectors>
