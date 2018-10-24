@@ -9,12 +9,9 @@ namespace Assets.Scripts.GA.Recombiners
 {
     class NPointCrossOver : IRecombiner
     {
-        
-
         //MyFitnessFunction fitnessFunction = new MyFitnessFunction();
         public string Combine(string parentA, string parentB)
         {
-
             int n = (parentA.Length / 2);
             int N = parentA.Length -1;
 
@@ -24,7 +21,6 @@ namespace Assets.Scripts.GA.Recombiners
             String partB = parentB.Substring(n, n);
 
             String child = String.Concat(partA, partB);
-            //Debug.Log("Combine1: " + parentA + " " + parentB + " = " + child);
             return child;
         }
     }

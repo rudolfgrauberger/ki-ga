@@ -7,11 +7,8 @@ namespace Assets.Scripts.GA.Selectors
 {
     class MySelector999 : ISelector
     {
-
-        RandomInitializer randomInitializer = new RandomInitializer();
-
-
-
+        private Random rand;
+        private List<char> genes;
 
         /// <summary>
         /// Ist das hier nur die Liste, die an den Recombinder übergeben wird, oder ist das die komplette neue generation
@@ -19,11 +16,6 @@ namespace Assets.Scripts.GA.Selectors
         /// </summary>
         /// <param name="parentGeneration"></param>
         /// <returns></returns>
-        /// 
-
-
-        private Random rand;
-        private List<char> genes;
         public List<string> SelectFromGeneration(GenerationDB.Generation parentGeneration)
         {
 
