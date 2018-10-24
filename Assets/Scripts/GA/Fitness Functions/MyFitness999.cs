@@ -8,8 +8,6 @@ namespace Assets.Scripts.GA.Fitness_Functions
 {
     public class MyFitness999 : IFitnessFunction
     {
-
-
         //Should be beteween 0..1
         public float DetermineFitness(CarState state)
         {
